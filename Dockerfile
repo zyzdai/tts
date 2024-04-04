@@ -2,7 +2,7 @@ FROM python:3.8-slim-buster
 
 RUN mkdir /app
 
-COPY ./*.py /app/
+COPY . /app/
 
 RUN cd /app \
     && python3 -m pip install --upgrade pip\
